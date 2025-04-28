@@ -11,14 +11,23 @@ export default function Login() {
       </div>
 
       <div className="login-container__loginization">
-        <img src={login} alt="login" />
-        <input type="email" placeholder="E-mail" />
-        <img src={password} alt="password" />
-        <input
-          type="password"
-          placeholder="Password"
-          className="login-container__password"
-        />
+        <div className="login-container__login-form">
+          <form action="#">
+            <img src={login} alt="login" />
+            <input type="email" placeholder="E-mail" />
+          </form>
+        </div>
+
+        <div className="login-container__registration-form">
+          <form action="#">
+            <img src={password} alt="password" />
+            <input
+              type="password"
+              placeholder="Password"
+              className="login-container__password"
+            />
+          </form>
+        </div>
       </div>
 
       <div className="login-container__button-group">
