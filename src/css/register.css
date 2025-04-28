@@ -1,0 +1,16 @@
+.register {
+    background: linear-gradient(
+      96.76deg,
+      #ffc727 -16.42%,
+      #9e40ba 97.04%,
+      #7000ff 150.71%
+    );
+    color: #fbfbfb;
+  }
+  
+  .login {
+    background: #fcfcfc;
+    border: 1px solid #4a56e2;
+    color: #623f8b;
+    margin-top: 20px;
+  }

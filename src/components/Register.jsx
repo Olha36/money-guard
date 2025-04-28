@@ -2,6 +2,7 @@ import logo from "../assets/logo-login.png";
 import login from "../assets/login-icon.png";
 import password from "../assets/password.png";
 import userName from "../assets/user-icon.png";
+import "../css/register.css";
 
 export default function Register({ onToggle }) {
   return (
@@ -38,7 +39,6 @@ export default function Register({ onToggle }) {
               className="login-container__password"
             />
           </div>
-       
         </form>
       </div>
 
