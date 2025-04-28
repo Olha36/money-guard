@@ -1,9 +1,9 @@
 import logo from "../assets/logo-login.png";
 import login from "../assets/login-icon.png";
 import password from "../assets/password.png";
+import userName from "../assets/user-icon.png";
 
-
-export default function Login({ onToggle }) {
+export default function Register({ onToggle }) {
   return (
     <div className="login-container">
       <div className="login-container__logo">
@@ -12,7 +12,11 @@ export default function Login({ onToggle }) {
       </div>
 
       <div className="login-container__loginization">
-        <form className="login-container__form" action="#">
+        <form action="#" className="login-container__form">
+          <div className="login-container__input-group">
+            <img src={userName} alt="user icon" />
+            <input type="text" placeholder="Name" />
+          </div>
           <div className="login-container__input-group">
             <img src={login} alt="login" />
             <input type="email" placeholder="E-mail" />
@@ -25,12 +29,24 @@ export default function Login({ onToggle }) {
               className="login-container__password"
             />
           </div>
+
+          <div className="login-container__input-group">
+            <img src={password} alt="password" />
+            <input
+              type="password"
+              placeholder="Confirm password"
+              className="login-container__password"
+            />
+          </div>
+       
         </form>
       </div>
 
       <div className="login-container__button-group">
-        <button className="login">Log in</button>
-        <button className="register" onClick={onToggle}>Register</button>
+        <button className="register">Register</button>
+        <button className="login" onClick={onToggle}>
+          Log in
+        </button>
       </div>
     </div>
   );

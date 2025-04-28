@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .login-container {
   width: 533px;
   height: 570px;
@@ -23,22 +24,38 @@ body {
 input {
   border: none;
   background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 0;
+  width: 100%;
 }
+
 .login-container__loginization {
   margin: 52px 0;
 }
 
-form {
+.login-container__form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* this replaces form:first-of-type margin */
+}
+
+.login-container__input-group {
   display: flex;
   align-items: center;
   border-bottom: 0.5px solid #ffffff66;
 }
-form:first-of-type {
-  margin-bottom: 40px;
-}
-form > img {
+
+.login-container__input-group img {
   margin: 0 20px;
 }
+
+.login-container__button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .login-container__button-group > button {
   width: 300px;
   height: 50px;
@@ -46,7 +63,9 @@ form > img {
   border-radius: 20px;
   text-transform: uppercase;
   font-size: 18px;
+  cursor: pointer;
 }
+
 .login {
   background: linear-gradient(
     96.76deg,
@@ -63,8 +82,14 @@ form > img {
   color: #623f8b;
   margin-top: 20px;
 }
-.login-container__button-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #cccccc; /* серая линия */
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+
+  
