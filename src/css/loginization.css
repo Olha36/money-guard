@@ -45,7 +45,7 @@ form > img {
   box-shadow: 1px 9px 15px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   text-transform: uppercase;
-  letter-spacing: 10%;
+  font-size: 18px;
 }
 .login {
   background: linear-gradient(
